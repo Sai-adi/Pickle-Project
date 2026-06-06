@@ -119,15 +119,15 @@ export default function HeroScene() {
           <PickleJar />
 
           {/* Floating spice elements */}
-          <FloatingSpice position={[-2.2,  1.2, -1]} color="#ffc107" size={0.07} />
-          <FloatingSpice position={[ 2.0,  0.8, -1]} color="#ef4444" size={0.05} />
+          <FloatingSpice position={[-2.2, 1.2, -1]} color="#ffc107" size={0.07} />
+          <FloatingSpice position={[2.0, 0.8, -1]} color="#ef4444" size={0.05} />
           <FloatingSpice position={[-1.8, -1.0, -0.5]} color="#8bc34a" size={0.06} />
-          <FloatingSpice position={[ 1.5, -1.3, -0.5]} color="#ff9800" size={0.08} />
-          <FloatingSpice position={[ 0.5,  2.0, -1]} color="#e91e63" size={0.04} />
+          <FloatingSpice position={[1.5, -1.3, -0.5]} color="#ff9800" size={0.08} />
+          <FloatingSpice position={[0.5, 2.0, -1]} color="#e91e63" size={0.04} />
 
           {/* Distorted orbs */}
           <DistortedOrb position={[-2.5, 0.5, -2]} color="#ffc107" />
-          <DistortedOrb position={[ 2.5, -0.5, -2]} color="#4caf50" />
+          <DistortedOrb position={[2.5, -0.5, -2]} color="#4caf50" />
 
           <Environment preset="night" />
 

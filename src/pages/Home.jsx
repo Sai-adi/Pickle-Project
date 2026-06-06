@@ -15,9 +15,9 @@ const features = [
 
 const stats = [
   { value: '50,000+', label: 'Happy Customers' },
-  { value: '25+',     label: 'Pickle Varieties' },
-  { value: '15',      label: 'Years of Craft' },
-  { value: '4.9★',    label: 'Average Rating' },
+  { value: '25+', label: 'Pickle Varieties' },
+  { value: '15', label: 'Years of Craft' },
+  { value: '4.9★', label: 'Average Rating' },
 ]
 
 export default function Home() {
@@ -106,22 +106,7 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Scroll indicator */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.2 }}
-          className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2"
-        >
-          <span className="text-xs text-gray-500 uppercase tracking-widest">Scroll</span>
-          <motion.div
-            animate={{ y: [0, 8, 0] }}
-            transition={{ repeat: Infinity, duration: 1.5 }}
-            className="w-5 h-8 border-2 border-white/20 rounded-full flex items-start justify-center pt-1.5"
-          >
-            <div className="w-1 h-2 bg-amber-400 rounded-full" />
-          </motion.div>
-        </motion.div>
+
       </section>
 
       {/* ─── STATS ─── */}
@@ -162,12 +147,11 @@ export default function Home() {
               whileHover={{ y: -5 }}
               className="glass rounded-2xl p-6 flex gap-4 items-start"
             >
-              <div className={`p-3 rounded-xl ${
-                f.color === 'amber'  ? 'bg-amber-500/20 text-amber-400' :
-                f.color === 'green'  ? 'bg-green-500/20 text-green-400' :
-                f.color === 'orange' ? 'bg-orange-500/20 text-orange-400' :
-                                       'bg-red-500/20 text-red-400'
-              }`}>
+              <div className={`p-3 rounded-xl ${f.color === 'amber' ? 'bg-amber-500/20 text-amber-400' :
+                  f.color === 'green' ? 'bg-green-500/20 text-green-400' :
+                    f.color === 'orange' ? 'bg-orange-500/20 text-orange-400' :
+                      'bg-red-500/20 text-red-400'
+                }`}>
                 {f.icon}
               </div>
               <div>
