@@ -76,7 +76,7 @@ export default function CartDrawer() {
                       animate={{ opacity: 1 }}
                       className="flex flex-col items-center justify-center h-full gap-4 text-gray-500"
                     >
-                      <div className="text-7xl">🥒</div>
+                      <div className="text-7xl"></div>
                       <p className="text-lg font-medium">Your cart is empty</p>
                       <p className="text-sm">Add some delicious pickles!</p>
                       <button

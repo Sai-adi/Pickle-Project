@@ -14,6 +14,7 @@ export const SAMPLE_PRODUCTS = [
     rating: '4.9',
     stock: 50,
   },
+
   {
     id: 'chili-green',
     name: 'Hari Mirch Achaar',
@@ -33,6 +34,18 @@ export const SAMPLE_PRODUCTS = [
     description: 'Whole lemons sun-pickled in salt and spices, then slow-fermented for 30 days. A tangy burst of citrus goodness.',
     price: 179,
     category: 'Lemon',
+    image: '/images/lemon.png',
+    weight: '350g',
+    spicy: 1,
+    rating: '4.8',
+    stock: 45,
+  },
+  {
+    id: 'lemon-tangy',
+    name: 'Nimbu Ka Achaar',
+    description: 'Whole lemons sun-pickled in salt and spices, then slow-fermented for 30 days. A tangy burst of citrus goodness.',
+    price: 179,
+    category: 'Lem',
     image: '/images/lemon.png',
     weight: '350g',
     spicy: 1,
@@ -80,4 +93,4 @@ export const SAMPLE_PRODUCTS = [
   },
 ]
 
-export const CATEGORIES = ['All', 'Mango', 'Chili', 'Lemon', 'Mixed', 'Garlic', 'Vegetables']
+export const CATEGORIES = ['All', 'Mango', 'Chili', 'Lemon', 'Mixed', 'Garlic', 'Vegetables', 'Lem']

@@ -11,14 +11,14 @@ export default function ProductCard({ product, index = 0 }) {
 
   const handleMouseMove = (e) => {
     const rect = e.currentTarget.getBoundingClientRect()
-    const cx = (e.clientX - rect.left) / rect.width  - 0.5
-    const cy = (e.clientY - rect.top)  / rect.height - 0.5
+    const cx = (e.clientX - rect.left) / rect.width - 0.5
+    const cy = (e.clientY - rect.top) / rect.height - 0.5
     setTilt({ x: cy * -15, y: cx * 15 })
   }
 
   const handleAddToCart = () => {
     addItem(product)
-    toast.success(`${product.name} added to cart! 🥒`, {
+    toast.success(`${product.name} added to cart! `, {
       duration: 2000,
     })
   }
@@ -126,11 +126,10 @@ export default function ProductCard({ product, index = 0 }) {
           onClick={handleAddToCart}
           disabled={product.stock === 0}
           id={`add-cart-${product.id}`}
-          className={`w-full flex items-center justify-center gap-2 py-3 rounded-2xl font-semibold text-sm transition-all duration-300 ${
-            product.stock === 0
+          className={`w-full flex items-center justify-center gap-2 py-3 rounded-2xl font-semibold text-sm transition-all duration-300 ${product.stock === 0
               ? 'bg-white/5 text-gray-500 cursor-not-allowed'
               : 'btn-primary'
-          }`}
+            }`}
         >
           <ShoppingCart size={17} />
           {product.stock === 0 ? 'Out of Stock' : 'Add to Cart'}

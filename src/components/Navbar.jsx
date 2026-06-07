@@ -10,8 +10,8 @@ import LoginModal from './LoginModal'
 import toast from 'react-hot-toast'
 
 export default function Navbar() {
-  const [scrolled, setScrolled]   = useState(false)
-  const [menuOpen, setMenuOpen]   = useState(false)
+  const [scrolled, setScrolled] = useState(false)
+  const [menuOpen, setMenuOpen] = useState(false)
   const [loginOpen, setLoginOpen] = useState(false)
   const location = useLocation()
   const navigate = useNavigate()
@@ -38,9 +38,9 @@ export default function Navbar() {
   }
 
   const navLinks = [
-    { to: '/',      label: 'Home' },
-    { to: '/shop',  label: 'Shop' },
-    { to: '/orders',label: 'My Orders' },
+    { to: '/', label: 'Home' },
+    { to: '/shop', label: 'Shop' },
+    { to: '/orders', label: 'My Orders' },
   ]
 
   return (
@@ -49,9 +49,8 @@ export default function Navbar() {
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.6, ease: 'easeOut' }}
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-          scrolled ? 'glass-dark shadow-2xl py-3' : 'bg-transparent py-5'
-        }`}
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? 'glass-dark shadow-2xl py-3' : 'bg-transparent py-5'
+          }`}
       >
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
           {/* Logo */}
@@ -61,10 +60,10 @@ export default function Navbar() {
               transition={{ duration: 0.6 }}
               className="w-10 h-10 rounded-xl bg-gradient-to-br from-amber-400 to-orange-600 flex items-center justify-center text-xl shadow-lg"
             >
-              🥒
+
             </motion.div>
             <span className="font-display font-bold text-xl text-gradient-amber">
-              PickleKing
+
             </span>
           </Link>
 
@@ -74,9 +73,8 @@ export default function Navbar() {
               <Link
                 key={to}
                 to={to}
-                className={`relative font-medium transition-colors duration-200 ${
-                  location.pathname === to ? 'text-amber-400' : 'text-gray-300 hover:text-amber-300'
-                }`}
+                className={`relative font-medium transition-colors duration-200 ${location.pathname === to ? 'text-amber-400' : 'text-gray-300 hover:text-amber-300'
+                  }`}
               >
                 {label}
                 {location.pathname === to && (
@@ -171,11 +169,10 @@ export default function Navbar() {
                   <Link
                     key={to}
                     to={to}
-                    className={`py-2 px-4 rounded-xl font-medium transition-colors ${
-                      location.pathname === to
+                    className={`py-2 px-4 rounded-xl font-medium transition-colors ${location.pathname === to
                         ? 'bg-amber-500/20 text-amber-400'
                         : 'text-gray-300 hover:bg-white/5'
-                    }`}
+                      }`}
                   >
                     {label}
                   </Link>

@@ -5,7 +5,7 @@ export default {
     extend: {
       colors: {
         brand: {
-          50:  '#fff8e1',
+          50: '#fff8e1',
           100: '#ffecb3',
           200: '#ffe082',
           300: '#ffd54f',
@@ -17,7 +17,7 @@ export default {
           900: '#7a3b00',
         },
         spice: {
-          50:  '#fdf2f0',
+          50: '#fdf2f0',
           100: '#fce4df',
           200: '#f8c4bc',
           300: '#f39484',
@@ -29,7 +29,7 @@ export default {
           900: '#5e100c',
         },
         olive: {
-          50:  '#f2f5e6',
+          50: '#f2f5e6',
           100: '#e3eacc',
           200: '#c6d69b',
           300: '#a8c068',
